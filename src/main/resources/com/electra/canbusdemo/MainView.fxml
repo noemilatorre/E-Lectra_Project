@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import eu.hansolo.medusa.Gauge?>
+<?import eu.hansolo.tilesfx.addons.Switch?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.electra.canbusdemo.MainViewController">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints maxHeight="55.0" minHeight="55.0" prefHeight="55.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="24.0" prefWidth="1026.0" GridPane.rowIndex="1">
+         <children>
+            <GridPane alignment="CENTER" layoutX="300.0" layoutY="2.0" AnchorPane.rightAnchor="100.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="15.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="28.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <VBox alignment="CENTER">
+                     <children>
+                        <HBox alignment="CENTER">
+                           <children>
+                              <Label text="ID (hex)" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" GridPane.rowIndex="1">
+                     <children>
+                        <HBox alignment="CENTER">
+                           <children>
+                              <TextField fx:id="idTextField" alignment="CENTER" prefWidth="40.0" text="0" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" GridPane.columnIndex="1">
+                     <children>
+                        <HBox alignment="CENTER">
+                           <children>
+                              <Label text="Data 0" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <children>
+                        <HBox alignment="CENTER">
+                           <children>
+                              <TextField fx:id="data0TextField" alignment="CENTER" prefWidth="40.0" text="0" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" GridPane.columnIndex="2">
+                     <children>
+                        <HBox alignment="CENTER">
+                           <children>
+                              <Label text="Data 1" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" GridPane.columnIndex="3">
+                     <children>
+                        <HBox alignment="CENTER">
+                           <children>
+                              <Label text="Data 2" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" GridPane.columnIndex="4">
+                     <children>
+                        <HBox alignment="CENTER">
+                           <children>
+                              <Label text="Data 3" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" GridPane.columnIndex="5">
+                     <children>
+                        <HBox alignment="CENTER">
+                           <children>
+                              <Label text="Data 4" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" GridPane.columnIndex="6">
+                     <children>
+                        <HBox alignment="CENTER">
+                           <children>
+                              <Label text="Data 5" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" GridPane.columnIndex="7">
+                     <children>
+                        <HBox alignment="CENTER">
+                           <children>
+                              <Label text="Data 6" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" GridPane.columnIndex="8">
+                     <children>
+                        <HBox alignment="CENTER">
+                           <children>
+                              <Label text="Data 7" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <children>
+                        <HBox alignment="CENTER">
+                           <children>
+                              <TextField fx:id="data1TextField" alignment="CENTER" prefWidth="40.0" text="0" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                     <children>
+                        <HBox alignment="CENTER">
+                           <children>
+                              <TextField fx:id="data2TextField" alignment="CENTER" prefWidth="40.0" text="0" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                     <children>
+                        <HBox alignment="CENTER">
+                           <children>
+                              <TextField fx:id="data3TextField" alignment="CENTER" prefWidth="40.0" text="0" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                     <children>
+                        <HBox alignment="CENTER">
+                           <children>
+                              <TextField fx:id="data4TextField" alignment="CENTER" prefWidth="40.0" text="0" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" GridPane.columnIndex="6" GridPane.rowIndex="1">
+                     <children>
+                        <HBox alignment="CENTER">
+                           <children>
+                              <TextField fx:id="data5TextField" alignment="CENTER" prefWidth="40.0" text="0" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" GridPane.columnIndex="7" GridPane.rowIndex="1">
+                     <children>
+                        <HBox alignment="CENTER">
+                           <children>
+                              <TextField fx:id="data6TextField" alignment="CENTER" prefWidth="40.0" text="0" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" GridPane.columnIndex="8" GridPane.rowIndex="1">
+                     <children>
+                        <HBox alignment="CENTER">
+                           <children>
+                              <TextField fx:id="data7TextField" alignment="CENTER" prefWidth="40.0" text="0" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </GridPane>
+            <Button fx:id="connectButton" contentDisplay="CENTER" layoutX="194.0" layoutY="19.0" mnemonicParsing="false" onAction="#connectButtonAction" text="Connect" />
+            <ComboBox fx:id="deviceComboBox" layoutX="14.0" layoutY="19.0" prefWidth="150.0" />
+            <Button fx:id="sendButton" layoutX="775.0" layoutY="19.0" mnemonicParsing="false" onAction="#sendButtonAction" text="Send" AnchorPane.rightAnchor="31.333333333333314" />
+         </children>
+      </AnchorPane>
+      <TitledPane animated="false" prefHeight="487.0" prefWidth="1024.0" text="INPUT" GridPane.rowIndex="2">
+         <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="282.0" prefWidth="1022.0">
+               <children>
+                  <AnchorPane layoutX="-1.0" layoutY="156.0" prefHeight="173.0" prefWidth="531.0">
+                     <children>
+                        <CheckBox fx:id="parkingModeCheckBox" disable="true" layoutX="17.0" layoutY="127.0" mnemonicParsing="false" onAction="#parkingModeAction" text="PARKING MODE" />
+                        <Label layoutX="227.0" layoutY="4.0" text="CONTROLS">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="setPointTextField" alignment="CENTER" layoutX="291.0" layoutY="81.0" onKeyReleased="#checkSetPointOnKeyReleased" prefHeight="28.0" prefWidth="133.0" promptText="SET POINT" visible="false" />
+                        <ComboBox fx:id="tractionModeComboBox" disable="true" layoutX="129.0" layoutY="46.0" onAction="#sendTractionModeAction" prefWidth="150.0" />
+                        <ComboBox fx:id="controlModeComboBox" disable="true" layoutX="129.0" layoutY="81.0" onAction="#enableSetPointTextFieldAction" prefWidth="150.0" />
+                        <Text layoutX="14.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TRACTION MODE:" />
+                        <Text layoutX="14.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CONTROL MODE:" />
+                        <Text fx:id="unitOfMeasureSetPoint" disable="true" fill="#807d7d" layoutX="424.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\%" visible="false" wrappingWidth="17.0" />
+                        <Button fx:id="sendSetPointButton" disable="true" layoutX="441.0" layoutY="82.0" mnemonicParsing="false" onAction="#sendSetPointOnAction" text="SendSetPoint" visible="false" />
+                        <Separator layoutX="525.0" layoutY="-152.0" orientation="VERTICAL" prefHeight="333.0" prefWidth="6.0">
+                           <effect>
+                              <InnerShadow>
+                                 <color>
+                                    <Color red="0.8156862854957581" green="0.800000011920929" blue="0.800000011920929" />
+                                 </color>
+                              </InnerShadow>
+                           </effect>
+                        </Separator>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="chargerAnchorPane" layoutX="546.0" prefHeight="233.0" prefWidth="477.0">
+                     <children>
+                        <Label layoutX="203.0" layoutY="7.0" text="CHARGER">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="155.0" layoutY="129.0" text="Configurazione charger">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="voltageTextField" disable="true" layoutX="253.0" layoutY="162.0" onKeyReleased="#sendVoltageOnKeyReleased" prefHeight="25.0" prefWidth="50.0" />
+                        <TextField fx:id="currentTextField" disable="true" layoutX="253.0" layoutY="200.0" onKeyReleased="#sendCurrentOnKeyReleased" prefHeight="25.0" prefWidth="50.0" />
+                        <Label disable="true" layoutX="308.0" layoutY="165.0" text="V" />
+                        <Label disable="true" layoutX="308.0" layoutY="204.0" text="A" />
+                        <ComboBox fx:id="chargingModeComboBox" disable="true" layoutX="222.0" layoutY="44.0" onAction="#chargingModeAction" prefHeight="27.0" prefWidth="166.0" promptText="CHARGING MODE" />
+                        <ComboBox fx:id="chargingProfileComboBox" disable="true" layoutX="221.0" layoutY="89.0" prefHeight="27.0" prefWidth="167.0" promptText="CHARGING PROFILE" />
+                        <Text layoutX="91.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CHARGING MODE:" />
+                        <Text layoutX="86.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CHARGING PROFILE:" />
+                        <Text layoutX="191.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Voltage" />
+                        <Text layoutX="196.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Current" wrappingWidth="50.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="287.0" layoutY="1.0" prefHeight="153.0" prefWidth="245.0">
+                     <children>
+                        <Switch fx:id="contactorSwitch" disable="true" layoutX="104.0" layoutY="75.0" onMouseClicked="#sendContactorSwitchOnMouseClicked" prefHeight="17.0" prefWidth="50.0" />
+                        <Label layoutX="90.0" layoutY="24.0" text="CONTACTORS">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Text layoutX="149.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Discharge" />
+                        <Text layoutX="67.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Charge" wrappingWidth="47.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="-3.0" layoutY="-5.0" prefHeight="161.0" prefWidth="267.0">
+                     <children>
+                        <Button fx:id="emergencyStopButton" disable="true" layoutX="47.0" layoutY="62.0" mnemonicParsing="false" onAction="#emergencyStopAction" prefHeight="61.0" prefWidth="195.0" style="-fx-background-color: F11111; -fx-border-color: Black;" text="EMERGENCY STOP" textFill="#000000f0">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="103.0" layoutY="23.0" text="EMERGENCY">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Separator layoutX="286.0" layoutY="4.0" orientation="VERTICAL" prefHeight="157.0" prefWidth="0.0">
+                           <effect>
+                              <InnerShadow>
+                                 <color>
+                                    <Color red="0.8156862854957581" green="0.800000011920929" blue="0.800000011920929" />
+                                 </color>
+                              </InnerShadow>
+                           </effect>
+                        </Separator>
+                     </children>
+                  </AnchorPane>
+                  <Separator fx:id="separatore" cacheShape="false" centerShape="false" focusTraversable="false" layoutY="152.0" prefHeight="7.0" prefWidth="525.0" scaleShape="false">
+                     <effect>
+                        <InnerShadow blurType="GAUSSIAN">
+                           <color>
+                              <Color red="0.8156862854957581" green="0.800000011920929" blue="0.800000011920929" />
+                           </color>
+                        </InnerShadow>
+                     </effect>
+                  </Separator>
+                  <Label layoutX="728.0" layoutY="243.0" text="LOG FILE PATH">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="526.0" layoutY="237.0" prefHeight="6.0" prefWidth="499.0">
+                     <effect>
+                        <InnerShadow>
+                           <color>
+                              <Color red="0.8156862854957581" green="0.800000011920929" blue="0.800000011920929" />
+                           </color>
+                        </InnerShadow>
+                     </effect>
+                  </Separator>
+                  <TextField fx:id="logFilePathTextField" disable="true" layoutX="558.0" layoutY="277.0" prefHeight="28.0" prefWidth="461.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font></TextField>
+               </children>
+            </AnchorPane>
+         </content>
+      </TitledPane>
+      <TitledPane animated="false" prefHeight="379.0" prefWidth="1024.0" text="OUTPUT" GridPane.rowIndex="3">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="333.0" prefWidth="996.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff7d" height="34.0" layoutX="37.0" layoutY="277.0" stroke="BLACK" strokeType="INSIDE" width="194.0" />
+                  <AnchorPane layoutX="525.0" layoutY="2.0" prefHeight="324.0" prefWidth="319.0">
+                     <children>
+                        <Label layoutX="149.0" layoutY="4.0" text="ENGINE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="8.0" layoutY="291.0" prefHeight="19.0" prefWidth="47.0" text="Speed: " />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff7d" height="28.0" layoutX="47.0" layoutY="286.0" stroke="BLACK" strokeType="INSIDE" width="108.0" />
+                        <Text fx:id="speedText" layoutX="77.0" layoutY="305.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0.0 " />
+                        <Label layoutX="160.0" layoutY="293.0" text="Torque:" />
+                        <VBox fx:id="temperatureEngineVBox" layoutX="21.0" layoutY="31.0" prefHeight="85.0" prefWidth="150.0" />
+                        <HBox layoutX="14.0" layoutY="134.0" prefHeight="152.0" prefWidth="322.0">
+                           <children>
+                              <Gauge fx:id="speedEngineGauge" prefHeight="131.0" prefWidth="183.0" />
+                              <Gauge prefHeight="161.0" prefWidth="159.0" />
+                           </children>
+                        </HBox>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff7d" height="30.0" layoutX="209.0" layoutY="285.0" stroke="BLACK" strokeType="INSIDE" width="113.0" />
+                        <Text fx:id="torqueText" layoutX="237.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0.0 " />
+                        <Text layoutX="120.0" layoutY="305.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hz" />
+                        <Text layoutX="289.0" layoutY="305.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nm" />
+                        <VBox fx:id="temperatureInverterVBox" layoutX="172.0" layoutY="31.0" prefHeight="85.0" prefWidth="150.0" />
+                     </children>
+                  </AnchorPane>
+                  <Text fx:id="tractionStatusText" layoutX="34.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="STATUS" textAlignment="CENTER" wrappingWidth="199.28857421875">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font></Text>
+                  <Label layoutX="71.0" layoutY="251.0" text="TRACTION STATUS">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutX="256.0" layoutY="-4.0" prefHeight="84.0" prefWidth="270.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2197ff7d" height="30.0" layoutX="41.0" layoutY="34.0" stroke="BLACK" strokeType="INSIDE" width="188.0" />
+                        <Text fx:id="emergencyStopStatusText" layoutX="35.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="STATUS" textAlignment="CENTER" wrappingWidth="199.28857421875">
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                        </Text>
+                        <Label layoutX="46.0" layoutY="14.0" text="EMERGENCY STOP STATUS">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Separator layoutX="1.0" layoutY="67.0" prefHeight="7.0" prefWidth="268.0">
+                           <effect>
+                              <InnerShadow>
+                                 <color>
+                                    <Color red="0.8156862854957581" green="0.800000011920929" blue="0.800000011920929" />
+                                 </color>
+                              </InnerShadow>
+                           </effect>
+                        </Separator>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="1.0" prefHeight="224.0" prefWidth="253.0">
+                     <children>
+                        <Label layoutX="96.0" layoutY="14.0" text="BATTERY">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="114.0" text="Voltage:">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font></Label>
+                        <Label layoutX="13.0" layoutY="143.0" text="Current:">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font></Label>
+                        <Label layoutX="13.0" layoutY="171.0" text="SoC (percentage):">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font></Label>
+                        <Text fill="#807d7d" layoutX="196.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="V" wrappingWidth="17.0">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font></Text>
+                        <Text fill="#807d7d" layoutX="195.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A" wrappingWidth="34.5">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font></Text>
+                        <Text fill="#807d7d" layoutX="196.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\%" wrappingWidth="16.9814453125">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font></Text>
+                        <VBox fx:id="batteryVBox" layoutX="14.0" layoutY="34.0" prefHeight="80.0" prefWidth="224.0" />
+                        <Text fx:id="batteryVoltageText" fill="#807d7d" layoutX="84.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Voltage" textAlignment="CENTER" visible="false">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font></Text>
+                        <Text fx:id="batteryCurrentText" fill="#807d7d" layoutX="85.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Current" textAlignment="CENTER" visible="false">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font></Text>
+                        <Text fx:id="chargerSoCPercentageText" fill="#807d7d" layoutX="145.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SoC (percentage)" textAlignment="CENTER" visible="false">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font></Text>
+                     </children>
+                  </AnchorPane>
+                  <Separator layoutX="254.0" layoutY="-4.0" orientation="VERTICAL" prefHeight="334.0" prefWidth="1.0">
+                     <effect>
+                        <InnerShadow>
+                           <color>
+                              <Color red="0.8156862854957581" green="0.800000011920929" blue="0.800000011920929" />
+                           </color>
+                        </InnerShadow>
+                     </effect>
+                  </Separator>
+                  <Separator fx:id="separatore1" cacheShape="false" centerShape="false" focusTraversable="false" layoutY="215.0" prefHeight="19.0" prefWidth="526.0" scaleShape="false">
+                     <effect>
+                        <InnerShadow blurType="GAUSSIAN">
+                           <color>
+                              <Color red="0.8156862854957581" green="0.800000011920929" blue="0.800000011920929" />
+                           </color>
+                        </InnerShadow>
+                     </effect>
+                  </Separator>
+                  <AnchorPane layoutX="257.0" layoutY="68.0" prefHeight="156.0" prefWidth="268.0">
+                     <children>
+                        <Label layoutX="102.0" text="CHARGER">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="13.0" layoutY="25.0" text="Voltage Request:">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font></Label>
+                        <Label layoutX="14.0" layoutY="54.0" text="Current Request:">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font></Label>
+                        <Label layoutX="90.0" layoutY="129.0" text="Mode:">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font></Label>
+                        <Text fill="#807d7d" layoutX="227.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="V" wrappingWidth="24.0">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font></Text>
+                        <Text fill="#807d7d" layoutX="228.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A" wrappingWidth="22.9814453125">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font></Text>
+                        <Text fx:id="chargerModeText" fill="#807d7d" layoutX="153.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mode" textAlignment="CENTER" wrappingWidth="89.0">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font></Text>
+                        <Text fx:id="voltageRequestText" fill="#807d7d" layoutX="131.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Voltage Request" textAlignment="CENTER" visible="false" wrappingWidth="95.5">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font></Text>
+                        <Text fx:id="currentRequestText" fill="#807d7d" layoutX="133.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Current Request" textAlignment="CENTER" visible="false" wrappingWidth="92.0">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font></Text>
+                        <Label layoutX="73.0" layoutY="106.0" text="Current:">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Text fill="#807d7d" layoutX="228.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A" wrappingWidth="22.9814453125">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="chargerCurrentText" fill="#807d7d" layoutX="138.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Current" textAlignment="CENTER" visible="false" wrappingWidth="81.5">
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font></Text>
+                        <Label layoutX="73.0" layoutY="80.0" text="Voltage:">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Text fill="#807d7d" layoutX="230.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="V" wrappingWidth="15.5048828125">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="chargerVoltageText" fill="#807d7d" layoutX="137.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Voltage" textAlignment="CENTER" visible="false" wrappingWidth="83.5">
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font></Text>
+                     </children>
+                  </AnchorPane>
+                  <Separator layoutX="523.0" layoutY="-8.0" orientation="VERTICAL" prefHeight="344.0" prefWidth="6.0">
+                     <effect>
+                        <InnerShadow>
+                           <color>
+                              <Color red="0.8156862854957581" green="0.800000011920929" blue="0.800000011920929" />
+                           </color>
+                        </InnerShadow>
+                     </effect>
+                  </Separator>
+                  <AnchorPane layoutX="857.0" prefHeight="113.0" prefWidth="159.0">
+                     <children>
+                        <Separator layoutY="-36.0" orientation="VERTICAL" prefHeight="377.0" prefWidth="18.0">
+                           <effect>
+                              <InnerShadow>
+                                 <color>
+                                    <Color red="0.8156862854957581" green="0.800000011920929" blue="0.800000011920929" />
+                                 </color>
+                              </InnerShadow>
+                           </effect>
+                        </Separator>
+                        <Label layoutX="22.0" layoutY="14.0" text="CHARGER STATUS">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2197ff7d" height="30.0" layoutX="14.0" layoutY="40.0" stroke="BLACK" strokeType="INSIDE" width="150.0" />
+                        <Text fx:id="chargerStatusText" layoutX="26.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="STATUS" textAlignment="CENTER" wrappingWidth="126.5">
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <Label layoutX="327.0" layoutY="251.0" text="CONTACTOR MAIN">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2197ff7d" height="37.0" layoutX="308.0" layoutY="274.0" stroke="BLACK" strokeType="INSIDE" width="181.0" />
+                  <Text fx:id="contactorMainStatusText" layoutX="308.0" layoutY="298.0" strokeType="OUTSIDE" strokeWidth="0.0" text="STATUS" textAlignment="CENTER" wrappingWidth="181.28857421875">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+        </content>
+      </TitledPane>
+   </children>
+</GridPane>

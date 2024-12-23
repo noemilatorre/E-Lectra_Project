@@ -1,0 +1,10 @@
+Timestamp;Corrente Reale (A);Frequenza calcolo RPM (HZ);Temperatura Motore (°C);Temperatura Inverter (°C);Corrente Batteria (A);Tensione Batteria (V);Modalita' di Controllo;Codice Fault
+[2023-12-19 16:28:31.000851]0;0;0;0;0;0;Torque;0;
+[2023-12-19 16:28:32.000115]0;0;0;0;0;0;Torque;0;
+[2023-12-19 16:28:32.000780]0;0;0;0;0;0;Torque;0;
+[2023-12-19 16:28:33.000233]0;0;0;0;0;0;Torque;0;
+[2023-12-19 16:28:36.000868]0;0;0;0;0;0;Torque;0;
+[2023-12-19 16:28:38.000243]0;0;0;0;0;0;Torque;0;
+[2023-12-19 16:28:43.000665]0;0;0;0;0;0;Torque;0;
+[2023-12-19 16:28:48.000274]0;0;0;0;0;0;Torque;0;
+[2023-12-19 16:28:54.000566]0;0;0;0;0;0;Torque;0;
