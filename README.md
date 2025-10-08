@@ -1,94 +1,116 @@
 # PowerTrain Monitoring and Control GUI
 
-## Overview
+[![Java](https://img.shields.io/badge/Java-21-ED8B00?logo=java)](https://java.com/)
+[![CAN Bus](https://img.shields.io/badge/CAN%20Bus-PCAN--USB-007EC7)](https://www.peak-system.com/)
+[![Status](https://img.shields.io/badge/Status-Completed-success)]()
 
-This Java application provides a Graphical User Interface (GUI) for monitoring and controlling a PowerTrain associated with an electric vehicle. The controllable elements include the engine, Vehicle Control Unit (VCU), charger, inverter, and battery. We used a Peak System PCAN-USB adapter for facilitating communication with external devices and systems.
+Applicazione Java con interfaccia grafica per il monitoraggio e controllo di un PowerTrain per veicoli elettrici. Il sistema utilizza un adattatore PCAN-USB per la comunicazione CAN bus con i componenti del powertrain.
 
-## Simulation Details
+## Panoramica
 
-The simulation involves sending packets with an ID and an 8-byte data array. These packets are received and interpreted to communicate with the interface accurately.
+Applicazione Java che fornisce un'interfaccia grafica per il monitoraggio e controllo di un PowerTrain per veicoli elettrici. I componenti controllabili includono:
 
----
-## User Interface
-![img.png](img1.png)
+- **Motore**
+- **VCU** (Vehicle Control Unit)
+- **Caricatore**
+- **Inverter**
+- **Batteria**
 
----
-
-### Input Section
-
-![img.png](img5.png)
-In the input section, users can configure the following parameters:
-
-- Traction Mode (forward (sport), forward (eco), reverse)
-- Control Mode (speed or torque)
-- Parking Mode (enabled or disabled)
-- Charging Mode (GRID or RES)
-- Charging Profile (Constant current or Custom Profile)
-- Set voltage and current thresholds
-- Contactor status (open and closed)
-- Emergency Stop button
+### Comunicazione CAN Bus
+La simulazione prevede l'invio di pacchetti con ID e array di dati a 8 byte, ricevuti e interpretati per comunicare accuratamente con l'interfaccia.
 
 ---
 
-### Output Section
+## Interfaccia Utente
+![Sezione Input](img5.png)
 
-![img.png](img4.png)
-In the output section, users can observe the PowerTrain's actual behavior. The output section includes:
+**Parametri configurabili:**
+- **Modalità Trazione**: avanti (sport), avanti (eco), retromarcia
+- **Modalità Controllo**: velocità o coppia
+- **Modalità Parcheggio**: abilitata/disabilitata
+- **Modalità Ricarica**: GRID o RES
+- **Profilo Ricarica**: corrente costante o profilo personalizzato
+- **Soglie** tensione e corrente
+- **Stato contattore**: aperto/chiuso
+- **Pulsante Arresto Emergenza**
 
-#### Battery Section:
+### Sezione Output
+![Sezione Output](img4.png)
 
-- Charge status with a Battery Skin (%)
-- Voltage (V)
-- Current (A)
+**Monitoraggio in tempo reale:**
 
-#### Charger Section:
+#### Batteria:
+- Stato carica con indicatore visivo (%)
+- Tensione (V)
+- Corrente (A)
 
-- Voltage (V)
-- Current (A)
-- Mode (GRID or RES)
+#### Caricatore:
+- Tensione (V)
+- Corrente (A)
+- Modalità (GRID o RES)
 
-#### Engine Section:
+#### Motore:
+- Velocità (Hz)
+- Coppia (Nm)
+- Temperatura motore (°C)
+- Temperatura inverter (°C)
+- Stato trazione
+- Stato arresto emergenza
+- Stato contattore
 
-- Speed (Hz)
-- Torque (Nm)
-- Engine Temperature (°C)
-- Inverter Temperature (°C)
-- Traction status
-- Emergency Stop Status (enabled or disabled)
-- Contactor status
 ---
-## Error Handling
 
-If the PCAN-USB adapter is not connected to the PC, the entire input screen is disabled, and an error alert is generated in case the connection fails.
+## Gestione Errori
 
-![img.png](img3.png)
+<img src="img3.png" width="400" alt="Gestione Errori">
+
+
+In caso di mancata connessione dell'adattatore PCAN-USB:
+- **Disabilitazione completa** della schermata di input
+- **Generazione alert** di errore per connessione fallita
+
 ---
 
 ## Data Logging
 
----
-![img.png](img2.png)
+<img src="img2.png" width="400" alt="Data Logging">
 
-The application generates a file in .csv format containing a summary of received messages. The log includes information on:
+Generazione automatica di file **.csv** contenente il riepilogo dei messaggi ricevuti:
 
+**Campi registrati:**
 - Timestamp
-- RPM Calculation Frequency (HZ)
-- Real Current (A)
-- Motor Temperature (°C)
-- Inverter Temperature (°C)
-- Battery Current (A)
-- Battery Voltage (V)
-- Control Mode
-- Fault Code
----
-## Dependencies
-
-- Java 21 
-- Peak System PCAN-USB adapter
+- Frequenza calcolo RPM (Hz)
+- Corrente reale (A)
+- Temperatura motore (°C)
+- Temperatura inverter (°C)
+- Corrente batteria (A)
+- Tensione batteria (V)
+- Modalità controllo
+- Codice errore
 
 ---
-## Contributors
 
-- noemi.latorre@studentmail.unicas.it
-- nunziamaria.colacicco@studentmail.unicas.it
-- gianmarco.luongo@studentmail.unicas.it
+## Tecnologie
+
+- **Linguaggio**: Java 21
+- **Comunicazione**: Adattatore PCAN-USB Peak System
+- **Protocollo**: CAN Bus
+- **Output**: File CSV per data logging
+
+---
+
+## Collaboratori
+
+**Noemi La Torre**
+- Email: noemi.latorre@studentmail.unicas.it
+- GitHub: [github.com/noemilatorre](https://github.com/noemilatorre)
+
+**Nunziamaria Colacicco**
+- Email: nunziamaria.colacicco@studentmail.unicas.it
+
+**Gianmarco Luongo**
+- Email: gianmarco.luongo@studentmail.unicas.it
+
+---
+
+*Progetto sviluppato per E-Lectra Challenge 2024 in collaborazione con E-Lectra s.r.l.*
